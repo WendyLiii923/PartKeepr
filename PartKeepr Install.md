@@ -1,7 +1,7 @@
 # 離線安裝PartKeepr # 
-要備有一台有網路的電腦(這邊簡稱電腦W)  
+要備有一台有網路的電腦
 
-## 先在電腦W準備 ##  
+## 先在有網路的電腦準備 ##  
 ### 安裝 PHP ###   
 選擇 Non-Thread Safe (NTS) 版本  
 https://windows.php.net/download/#php-8.4-nts-vs17-x64  
