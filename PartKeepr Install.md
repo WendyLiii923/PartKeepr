@@ -3,24 +3,23 @@
 
 ## 先在有網路的電腦準備 ##  
 ### 安裝 PHP ###   
-- 選擇 Non-Thread Safe (NTS) 版本  
-  - https://windows.php.net/download/#php-8.4-nts-vs17-x64  
-- Zip 下載並解壓縮到 C:\php  
+- 下載Windows 7.0.32 版本 (7.0.X或7.1.X)  
+  - [php-7.0.32-nts-Win32-VC14-x64.zip](https://windows.php.net/downloads/releases/archives/)  
+- 解壓縮到 C:\php  
 - 設定環境變數：C:\php 加入 Path  
 - cmd測試 php -v  
 ### 安裝 Composer ###  
-- 下載 Composer-Setup.exe並執行安裝  
+- 下載 1.10.26 版本的composer.phar (1.X.X)  
   - https://getcomposer.org/download/  
-- 確保選擇 C:\php\php.exe 來運行 Composer  
-- cmd測試 composer -v  
+- cmd測試 php composer.phar --version  
 ### 下載 PartKeepr 及其依賴 ###  
-  - 找任意位置下載 PartKeepr 源碼  
-  - cd C:\some\path  
+- 找任意位置下載 PartKeepr 源碼 (假設為C:\path)  
+  - cd C:\path  
   - git clone https://github.com/partkeepr/PartKeepr.git  
-  - 下載 vendor/ 依賴  
-  - cd C:\some\path\PartKeepr  
-  - composer install --prefer-dist --no-dev --ignore-platform-reqs  
-  - 打包 vendor/ 及 composer.lock  
+- 將composer.phar放到C:\path\PartKeepr  
+- 下載 vendor/ 依賴  
+  - cd C:\path\PartKeepr  
+  - php composer.phar install  
 
 ## 在離線電腦 ##
 - 安裝xampp-windows-x64-7.4.33-0-VC15-installer.exe  
