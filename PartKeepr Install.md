@@ -26,7 +26,10 @@
   - 必須安裝：Apache、MySQL/MariaDB、PHP  
   - 推薦安裝：phpMyAdmin  
   - 可選安裝：FileZilla、Mercury、Tomcat  
-- 重設root 用戶的密碼  
+- 重設root 用戶的密碼
+  - SET PASSWORD FOR 'root'@'localhost' = PASSWORD('NEWPASSWORD');  
+  - FLUSH PRIVILEGES;  
+
 - 新建資料庫名稱：partkeepr  
 - 下載 PartKeepr 的源碼   
   - cd C:\xampp\htdocs  
